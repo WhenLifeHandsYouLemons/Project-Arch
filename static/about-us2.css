@@ -1,0 +1,234 @@
+p.comment-likes {
+    height: 16px;
+    float: none;
+    width: 100%;
+    clear: both;
+    display: block;
+    margin-left: -2px;
+}
+
+p.comment-not-liked {
+    cursor: pointer;
+}
+
+p.comment-likes a.view-likers {
+    text-decoration: underline;
+    border: none;
+}
+
+div.comment-likes-overlay {
+    color: rgb(85, 85, 85);
+    position: absolute;
+    font-size: 9pt;
+    padding: 0;
+    margin: 0;
+    z-index: 20000;
+}
+
+div.comment-likes-overlay div.inner {
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    border-color: rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    margin: 0;
+    max-width: 310px;
+    max-height: 250px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+div.comment-likes-overlay div.inner a img {
+    text-decoration: none;
+    height: 25px;
+    width: 25px;
+    margin: 2px 10px 2px 2px;
+    vertical-align: middle;
+}
+
+div.comment-likes-overlay div.inner ul {
+    margin: 0;
+    padding: 0;
+}
+
+div.comment-likes-overlay div.inner ul li {
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 0 5px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+div.comment-likes-overlay div.inner ul.single li {
+    width: 100%;
+}
+
+div.comment-likes-overlay div.inner ul.double li {
+    width: 50%;
+}
+
+div.comment-likes-overlay div.inner a,
+div.comment-likes-overlay div.inner a:hover {
+    text-decoration: none;
+    border-bottom: none;
+    background: transparent;
+}
+
+div.comment-likes-overlay div.inner ul li a span.user-name {
+    color: rgb(85, 85, 85);
+}
+
+p.comment-likes span.comment-like-feedback {
+    font-size: 12px;
+    line-height: 1.8em;
+    opacity: .8;
+    float: left;
+    padding: 1px 0 0 5px;
+    display: block !important;
+}
+
+a.comment-like-link:hover {
+    background: transparent;
+}
+
+a.comment-like-link span {
+    display: none;
+}
+
+a.comment-like-link {
+    outline: none;
+    border: 0 !important;
+    text-decoration: none !important;
+    padding: 0;
+    margin: 0;
+    float: left;
+    text-decoration: none;
+    line-height: 70%;
+    background: transparent;
+}
+
+a.comment-like-link:before,
+div.comment-likes-overlay span.icon {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Noticons";
+    font-size: 20px;
+    line-height: .9;
+}
+
+div.comment-likes-overlay span.icon {
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding: 3px 0 1px 0;
+}
+
+a.comment-like-link:before {
+    color: #2EA2CC;
+    content: '\f408';
+    width: 16px;
+    display: inline-block;
+}
+
+a.comment-like-link.loading {
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -ms-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
+    opacity: 0;
+}
+
+a.comment-like-link:hover:before,
+p.comment-liked a.comment-like-link:before,
+p.comment-not-liked:hover a.comment-like-link:before {
+    color: #f1831e;
+    background: transparent;
+}
+
+div.comment-likes-overlay div .slider-nav {
+    position: relative;
+    clear: both;
+    width: 310px;
+    height: 40px;
+    margin: 15px 0 -15px -12px;
+    text-align: center;
+    border-top: 1px solid #dfdfdf;
+}
+
+div.comment-likes-overlay div .slider-nav em {
+    font-style: normal;
+}
+
+div.comment-likes-overlay div .slider-nav .prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-right: 1px solid #dfdfdf;
+}
+
+div.comment-likes-overlay div .slider-nav .noticon {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+div.comment-likes-overlay div .slider-nav .next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid #dfdfdf;
+}
+
+div.comment-likes-overlay div .slider-nav .position {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    bottom: 0;
+    right: 40px;
+    text-align: center;
+}
+
+div.comment-likes-overlay div .slider-nav .position div {
+    display: inline;
+}
+
+div.comment-likes-overlay div .slider-nav .position em {
+    display: inline-block;
+    padding: 0 3px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #bbb;
+    cursor: pointer;
+}
+
+div.comment-likes-overlay div .slider-nav .position .on {
+    color: #1e8cbe;
+}
+
+div.comment-likes-overlay .swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+
+div.comment-likes-overlay .swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+div.comment-likes-overlay .swipe-wrap>div {
+    float: left;
+    width: 100%;
+    position: relative;
+}
